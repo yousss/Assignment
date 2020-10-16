@@ -1,12 +1,28 @@
+import { Container } from '@material-ui/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {
+  BrowserRouter as Router,
+  Route, Switch
+} from 'react-router-dom';
+import CustomAppBar from './components/CustomAppBar';
+import { ListUser } from './domain/User/ListUser';
+import { UserInfo } from './domain/User/User';
+import './index.scss';
 import * as serviceWorker from './serviceWorker';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CustomAppBar />
+    <Router>
+      <Container maxWidth="md">
+        <Switch>
+          <Route exact path="/" component={ListUser} />
+          <Route exact path="/users/:login/:id" component={UserInfo} />
+        </Switch>
+      </Container>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

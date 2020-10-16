@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.backdrop {
+  color: #fff;
+  z-index: 1000;
+}
+
+.paper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  .link {
+    font-weight: 500;
+    max-width: 201px;
+    width: 100%;
+    nav {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+
+      .text-center {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.userInfo,
+.userDetail {
+  width: 100%;
+  margin: 21px auto auto auto;
+  max-width: 300px;
+  text-align: center;
+  padding-top: 10px;
+
+  .avatar {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .userInfo__button {
+    justify-content: center;
+  }
+}
