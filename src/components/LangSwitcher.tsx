@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme)=> createStyles({
 );
 
 
-export default function LangSwitcher () {
+export default function LangSwitcher (): JSX.Element {
 
     const styles = useStyles();
 
