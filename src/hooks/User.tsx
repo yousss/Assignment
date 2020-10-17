@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { IUser, IUserInfo } from '../domain/User/IUser';
+import { IUser, IUserInfo } from '../share/IUser';
 import { MyAppDatabase } from '../IndexedDB/User';
 import http from './http';
 

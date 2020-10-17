@@ -1,11 +1,9 @@
-import { initalState } from "../../context/UserProp";
+import { initalState } from "./UserProp";
 
 export interface LoginProp {
     login: string;
     id: string;
 };
-
-
 
 export type IUser = typeof initalState;
 

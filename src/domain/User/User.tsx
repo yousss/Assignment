@@ -4,7 +4,7 @@ import { RouteComponentProps } from 'react-router-dom';
 import { CustomButton } from '../../components/CustomButton';
 import Loader from '../../components/Loader';
 import { useGetUser } from "../../hooks/User";
-import { IUserInfo, LoginProp } from './IUser';
+import { IUserInfo, LoginProp } from '../../share/IUser';
 import styles from './style.module.scss';
 
 

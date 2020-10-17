@@ -1,4 +1,4 @@
-import { initalState } from "./UserProp"
+import { initalState } from "../share/UserProp"
 
 type State = typeof initalState
 type userAction = | { type: 'login' | 'logout' | 'register'; }

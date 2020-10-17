@@ -1,5 +1,5 @@
 import Dexie from 'dexie';
-import { IUser} from '../domain/User/IUser'
+import { IUser} from '../share/IUser'
 
 
 export class MyAppDatabase extends Dexie {

@@ -3,8 +3,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Loader from '../../components/Loader';
 import { useGetUsers } from "../../hooks/User";
-import { LoginProp } from './IUser';
+import { LoginProp } from '../../share/IUser';
 import styles from './style.module.scss';
+
+
 
 
 const User: React.FC<LoginProp> = ({ login, id }) => {
