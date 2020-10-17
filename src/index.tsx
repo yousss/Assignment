@@ -6,6 +6,7 @@ import {
   Route, Switch
 } from 'react-router-dom';
 import CustomAppBar from './components/CustomAppBar';
+import { GlobalProvider } from './context/GlobalContext';
 import { ListUser } from './domain/User/ListUser';
 import { UserInfo } from './domain/User/User';
 import './index.scss';
@@ -14,15 +15,17 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CustomAppBar />
-    <Router>
-      <Container maxWidth="md">
-        <Switch>
-          <Route exact path="/" component={ListUser} />
-          <Route exact path="/users/:login/:id" component={UserInfo} />
-        </Switch>
-      </Container>
-    </Router>
+    <GlobalProvider>
+      <CustomAppBar />
+      <Router>
+        <Container maxWidth="md">
+          <Switch>
+            <Route exact path="/" component={ListUser} />
+            <Route exact path="/users/:login/:id" component={UserInfo} />
+          </Switch>
+        </Container>
+      </Router>
+    </GlobalProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
  
 
-export default function CustomDrawer(anchorProp: Anchor) {
+export default function CustomDrawer (anchorProp: Anchor) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,

@@ -52,7 +52,7 @@ export const UserInfo = ({ match }: RouteComponentProps<LoginProp>):JSX.Element 
                 </CardContent>
             </CardActionArea>
              <CardActions className={styles.userInfo__button }>
-                 <CustomButton href="/" color="red">Back to User List</CustomButton>
+                 <CustomButton href="/" color="red"  >Back to User List</CustomButton>
             </CardActions>
         </Card>
         )

@@ -8,6 +8,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import React from 'react';
 import CustomDrawer from './CustomDrawer';
+import LangSwitcher from './LangSwitcher'
 
 interface Props {
   window?: () => Window;
@@ -20,6 +21,10 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
     },
     
+    langLabel: {
+      display: 'block',
+    },
+
     title: {
       flexGrow: 1,
       display: 'none',
@@ -114,7 +119,10 @@ export default function CustomAppBar () {
     <div className={classes.root}>
       <AppBar className={classes.customBar} position="static">
         <Toolbar id="back-to-top-anchor">
-         {CustomDrawer('left')}
+          { CustomDrawer('left') }
+          <Typography className={classes.langLabel} variant="h2" noWrap >
+            <LangSwitcher />
+          </Typography>
           <Typography className={classes.title} variant="h6" noWrap>
             Assignments of Mr.Yous Yoeun
           </Typography>
