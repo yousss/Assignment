@@ -1,12 +1,15 @@
 import { initalState } from "./UserProp";
 
+
+
 export interface LoginProp {
     login: string;
     id: string;
 };
 
-export type IUser = typeof initalState;
+export type IUser = typeof initalState
 
+// export type T = Partial<IUser>
 
 // export interface IUser extends LoginProp {
 //     node_id: string,

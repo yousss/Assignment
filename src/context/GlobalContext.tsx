@@ -14,6 +14,7 @@ export const useLanguage = () => useContext(LanguageContext);
 export const useUpdateLanguage = () => useContext(UpdateLanguageContext);
 
 
+
 export const GlobalProvider:React.FC = ({ children }) => {
 
     const [state, dispatch] = useReducer(UserReducer, initalState);
